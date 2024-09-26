@@ -1,0 +1,152 @@
+[gd_scene load_steps=4 format=3 uid="uid://di7m7xffv7a0d"]
+
+[ext_resource type="Script" path="res://draggable_item_slot.gd" id="1_bt3ty"]
+[ext_resource type="Script" path="res://TestScenes/material_tray.gd" id="1_nqmiv"]
+[ext_resource type="Texture2D" uid="uid://dblcxg4s7hd81" path="res://Assets/GridNodes/Base.png" id="3_5n8w6"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nqmiv")
+sizeX = 4
+sizeY = 4
+
+[node name="Slot 0" type="TextureRect" parent="."]
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 1" type="TextureRect" parent="."]
+offset_left = 32.0
+offset_right = 32.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 2" type="TextureRect" parent="."]
+offset_left = 64.0
+offset_right = 64.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 3" type="TextureRect" parent="."]
+offset_left = 96.0
+offset_right = 96.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 4" type="TextureRect" parent="."]
+offset_left = 128.0
+offset_right = 128.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 5" type="TextureRect" parent="."]
+offset_top = 32.0
+offset_bottom = 32.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 6" type="TextureRect" parent="."]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 7" type="TextureRect" parent="."]
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 64.0
+offset_bottom = 32.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 8" type="TextureRect" parent="."]
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 32.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 9" type="TextureRect" parent="."]
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 32.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 10" type="TextureRect" parent="."]
+offset_top = 64.0
+offset_bottom = 64.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 11" type="TextureRect" parent="."]
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 64.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 12" type="TextureRect" parent="."]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 13" type="TextureRect" parent="."]
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 64.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 14" type="TextureRect" parent="."]
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 64.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 15" type="TextureRect" parent="."]
+offset_top = 96.0
+offset_bottom = 96.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 16" type="TextureRect" parent="."]
+offset_left = 32.0
+offset_top = 96.0
+offset_right = 32.0
+offset_bottom = 96.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 17" type="TextureRect" parent="."]
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 64.0
+offset_bottom = 96.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 18" type="TextureRect" parent="."]
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 96.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")
+
+[node name="Slot 19" type="TextureRect" parent="."]
+offset_left = 128.0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 96.0
+texture = ExtResource("3_5n8w6")
+script = ExtResource("1_bt3ty")

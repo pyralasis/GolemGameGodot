@@ -20,3 +20,9 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 func _on_mouse_exited():
 	if isHovered:
 		isHovered = false
+		print_debug(self.name + "A")
+	
+		
+func _on_mouse_entered():
+	print_debug(self.name)
+	

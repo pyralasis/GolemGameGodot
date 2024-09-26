@@ -18,17 +18,28 @@ classDiagram
     class Material{
         +int quantity
         +int maxQuantity
+        +MaterialType materialType
         +isEmpty(): bool
     }
 
+
     DraggableItemSlot <-- GemSlot
+    DraggableItemSlot <-- MaterialInventorySlot
 
     class DraggableItemSlot{
         +bool isFilled
     }
     class GemSlot{
     }
-    class MaterialSlot{
-        +Material material
+    class MaterialInventorySlot{
+        +MaterialType material
+    }
+
+    class golem{
+        +MaterialType headMaterial
+        +MaterialType bodyMaterial
+        +MaterialType armsMaterial
+        +MaterialType legsMaterial
+
     }
 ```

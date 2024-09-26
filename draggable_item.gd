@@ -1,8 +1,8 @@
 class_name DraggableItem
 extends TextureRect
 
-var currentSlot: DraggableItemSlot
-var defaultSlot: DraggableItemSlot
+var currentSlot
+var defaultSlot
 
 
 # Called when the node enters the scene tree for the first time.
