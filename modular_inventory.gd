@@ -1,8 +1,12 @@
 @tool
+class_name	ModularInventory
 extends Node2D
 
 @export var sizeX: int
 @export var sizeY: int
+@export var spaceBetweenSlots: int
+@export var slotTexture: Texture2D
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,8 +19,8 @@ func _ready():
 		for x in range(sizeX):
 			var child = DraggableItemSlot.new()
 			child.set_name("Slot " + str(currentSlot))
-			child.set_position(Vector2(x*32, y*32))
-			child.texture = load("res://Assets/GridNodes/Base.png")
+			child.set_position(Vector2(x*32 + x*spaceBetweenSlots, y*32 + y*spaceBetweenSlots))
+			child.texture = slotTexture
 			add_child(child)
 			child.set_owner(self) # this adds the child to the editor node tree 
 			

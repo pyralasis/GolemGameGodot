@@ -1,8 +1,7 @@
 ```mermaid
 classDiagram
-    DraggableItem <-- Gem
-    DraggableItem <-- Material
-
+    
+    TextureRect <-- DraggableItem
     class DraggableItem{
         +DraggableItemSlot currentSlot
         +DraggableItemSlot defaultSlot
@@ -11,18 +10,25 @@ classDiagram
         + _get_drag_data(): Variant
         + _notification(): void
     }
-    class Gem{
-        -vector2 size
-        -gemType?
-    }
-    class Material{
+
+    Resource <-- Item
+    Item <-- Gem
+    Item <-- Material
+    class Item{
         +int quantity
         +int maxQuantity
-        +MaterialType materialType
         +isEmpty(): bool
     }
+    class Gem{
+        -int tier
+        -GemType gemType
+    }
+    class Material{
+        +MaterialType materialType
+        +Stats stats
+    }
 
-
+    TextureRect <-- DraggableItemSlot
     DraggableItemSlot <-- GemSlot
     DraggableItemSlot <-- MaterialInventorySlot
 
@@ -35,11 +41,34 @@ classDiagram
         +MaterialType material
     }
 
-    class golem{
+    Node2D <-- Entity
+    Entity <-- Golem
+    Entity <-- Enemy
+    class Entity{
+        +Health health
+    }
+    class Golem{
         +MaterialType headMaterial
         +MaterialType bodyMaterial
         +MaterialType armsMaterial
         +MaterialType legsMaterial
+    }
+    class Enemy{
 
+    }
+
+    Resource <-- health
+    class Health{
+        +int maxHealth
+        +int currentHealth
+        +int regenerationSpeed?
+        +damage(int):void
+        +heal(int):void
+    }
+
+    class Inventory{
+        +Material[] materials
+        +Gems[] gems
+        +int gold
     }
 ```
