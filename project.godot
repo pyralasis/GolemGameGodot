@@ -15,6 +15,10 @@ run/main_scene="res://TestScenes/test_material_tray.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SaveManager="*res://save_manager.gd"
+
 [dotnet]
 
 project/assembly_name="GolemGameGodot"

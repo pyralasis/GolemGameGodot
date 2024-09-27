@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dbkjbxfpqhrus"]
+
+[ext_resource type="Script" path="res://modular_inventory.gd" id="1_2hp2p"]
+[ext_resource type="Texture2D" uid="uid://dblcxg4s7hd81" path="res://Assets/GridNodes/Base.png" id="2_gemj6"]
+[ext_resource type="Script" path="res://draggable_item_slot.gd" id="3_81kvt"]
+[ext_resource type="Texture2D" uid="uid://bx5cf7yh2ajn4" path="res://Assets/GridNodes/Fire.png" id="4_qr5fm"]
+[ext_resource type="Script" path="res://draggable_item.gd" id="5_iuf8f"]
+
+[node name="ModularInventory" type="Node2D"]
+script = ExtResource("1_2hp2p")
+sizeX = 2
+sizeY = 2
+slotTexture = ExtResource("2_gemj6")
+
+[node name="Slot 0" type="TextureRect" parent="."]
+texture = ExtResource("2_gemj6")
+script = ExtResource("3_81kvt")
+
+[node name="DraggableItem" type="TextureRect" parent="Slot 0"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 76.0
+offset_right = 110.0
+offset_bottom = 116.0
+texture = ExtResource("4_qr5fm")
+script = ExtResource("5_iuf8f")
+
+[node name="Slot 1" type="TextureRect" parent="."]
+offset_left = 32.0
+offset_right = 32.0
+texture = ExtResource("2_gemj6")
+script = ExtResource("3_81kvt")
+
+[node name="Slot 2" type="TextureRect" parent="."]
+offset_top = 32.0
+offset_bottom = 32.0
+texture = ExtResource("2_gemj6")
+script = ExtResource("3_81kvt")
+
+[node name="Slot 3" type="TextureRect" parent="."]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("2_gemj6")
+script = ExtResource("3_81kvt")

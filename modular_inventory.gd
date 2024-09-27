@@ -10,9 +10,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for children in self.get_children():
-		self.remove_child(children)
-		children.queue_free()
+	#for children in self.get_children():
+		#self.remove_child(children)
+		#children.queue_free()
 		
 	var currentSlot = 0
 	for y in range(sizeY):

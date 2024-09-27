@@ -1,18 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://di7m7xffv7a0d"]
+[gd_scene load_steps=7 format=3 uid="uid://di7m7xffv7a0d"]
 
 [ext_resource type="Script" path="res://draggable_item_slot.gd" id="1_bt3ty"]
 [ext_resource type="Script" path="res://modular_inventory.gd" id="1_nqmiv"]
 [ext_resource type="Script" path="res://golem_builder_template.gd" id="2_4xsbm"]
 [ext_resource type="Texture2D" uid="uid://f8e6gw70ulsu" path="res://Assets/GolemBuilderTemplate.png" id="2_ceq50"]
 [ext_resource type="Texture2D" uid="uid://dblcxg4s7hd81" path="res://Assets/GridNodes/Base.png" id="3_5n8w6"]
+[ext_resource type="PackedScene" uid="uid://dbkjbxfpqhrus" path="res://TestScenes/test.tscn" id="6_hniuh"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="MaterialTray" type="Node2D" parent="."]
 script = ExtResource("1_nqmiv")
 sizeX = 3
-sizeY = 3
-spaceBetweenSlots = 16
+sizeY = 6
 slotTexture = ExtResource("3_5n8w6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -59,3 +59,6 @@ offset_right = 318.0
 offset_bottom = 780.0
 texture = ExtResource("3_5n8w6")
 script = ExtResource("1_bt3ty")
+
+[node name="ModularInventory" parent="." instance=ExtResource("6_hniuh")]
+position = Vector2(33, 213)
