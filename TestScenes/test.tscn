@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dbkjbxfpqhrus"]
 
-[ext_resource type="Script" path="res://modular_inventory.gd" id="1_2hp2p"]
+[ext_resource type="Script" path="res://Scripts/UI/modular_inventory.gd" id="1_2hp2p"]
 [ext_resource type="Texture2D" uid="uid://dblcxg4s7hd81" path="res://Assets/GridNodes/Base.png" id="2_gemj6"]
-[ext_resource type="Script" path="res://draggable_item_slot.gd" id="3_81kvt"]
+[ext_resource type="Script" path="res://Scripts/UI/draggable_item_slot.gd" id="3_81kvt"]
 [ext_resource type="Texture2D" uid="uid://bx5cf7yh2ajn4" path="res://Assets/GridNodes/Fire.png" id="4_qr5fm"]
-[ext_resource type="Script" path="res://draggable_item.gd" id="5_iuf8f"]
+[ext_resource type="Script" path="res://Scripts/UI/draggable_item.gd" id="5_iuf8f"]
 
 [node name="ModularInventory" type="Node2D"]
 script = ExtResource("1_2hp2p")

@@ -2,6 +2,14 @@ extends Node
 
 var test: int = 5
 var test2:= DraggableItem.new()
+var data = {
+	"inventory":{
+		"slot_one":{
+			"material_type": 1,
+			"quantity": 10
+		}
+	}
+}
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	read_save_data()

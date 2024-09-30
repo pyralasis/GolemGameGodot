@@ -5,6 +5,7 @@ classDiagram
     class DraggableItem{
         +DraggableItemSlot currentSlot
         +DraggableItemSlot defaultSlot
+        +Item item
 
         + _ready(): void 
         + _get_drag_data(): Variant
@@ -34,11 +35,7 @@ classDiagram
 
     class DraggableItemSlot{
         +bool isFilled
-    }
-    class GemSlot{
-    }
-    class MaterialInventorySlot{
-        +MaterialType material
+        +DraggableItem item
     }
 
     Node2D <-- Entity

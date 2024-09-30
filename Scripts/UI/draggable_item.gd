@@ -4,7 +4,7 @@ extends TextureRect
 var currentSlot
 var defaultSlot
 
-
+var item: Variant
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	defaultSlot = get_parent()
